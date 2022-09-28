@@ -102,6 +102,12 @@ a {
     font-weight: 600;
 }
 
+.navbar__right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 .navbar__list {
     display: flex;
     align-items: center;
@@ -185,6 +191,98 @@ a {
 
 .navbar__toggle__mb.active {
     background-color: transparent;
+}
+
+.navbar__cart__login {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.navbar__cart {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar__cart__number {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--yellow-color);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: -10px;
+}
+
+.navbar__cart__container {
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    min-width: 250px;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar__cart__item > a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__cart__item > a:hover {
+    background-color: #f5f5f5;
+}
+
+.navbar__cart__item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.navbar__cart__item-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-color);
+    line-height: 1;
+}
+
+.navbar__cart__item-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--orange-color);
+}
+
+.navbar__cart__footer__link {
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__cart__footer__link:hover {
+    background-color: #f5f5f5;
+}
+
+.navbar__cart:hover .navbar__cart__container {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* SERVICES & MENU */
@@ -649,6 +747,10 @@ a {
         display: block;
     }
 
+    .navbar__right {
+        gap: 30px;
+    }
+
     .navbar__list {
         position: fixed;
         top: 0;
@@ -668,6 +770,10 @@ a {
 
     .navbar__list.active {
         transform: translateX(0);
+    }
+
+    .navbar__login {
+        display: none;
     }
 
     /* SERVE */
