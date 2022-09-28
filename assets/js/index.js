@@ -31,27 +31,42 @@ window.addEventListener('scroll', () => {
 });
 
 // hiển thị slide
-const slides = document.querySelectorAll('.slider');
-const dots = document.querySelectorAll('.dot');
+$(document).ready(function () {
+   $('.about__content-comment').slick({
+      dots: true,
+      slidesToShow: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true,
+      variableWidth: true,
+      focusOnSelect: true,
+      swipeToSlide: true,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               arrows: false,
+               slidesToShow: 1,
+               variableWidth: false,
+            },
+         },
+         {
+            breakpoint: 768,
+            settings: {
+               arrows: false,
+               slidesToShow: 1,
+               variableWidth: false,
+            },
+         },
+         {
+            breakpoint: 480,
+            settings: {
+               arrows: false,
 
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-   slides.forEach(slide => {
-      slide.style.display = 'none';
+               slidesToShow: 1,
+            },
+         },
+      ],
    });
-   slideIndex++;
-   if (slideIndex > slides.length) {
-      slideIndex = 1;
-   }
-
-   dots.forEach(dot => {
-      dot.className = dot.className.replace('active', '');
-   });
-   slides[slideIndex - 1].style.display = 'block';
-   dots[slideIndex - 1].className += ' active';
-   setTimeout(showSlides, 5000);
-}
-
-
+});
