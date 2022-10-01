@@ -15,6 +15,7 @@
 
         <!-- css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
         <title>Let's Food</title>
@@ -23,7 +24,7 @@
         <!-- HEADER -->
         <header class="header">
             <div class="header__container">
-                <div class="logo">
+                <a  href="#" class="logo">
                     <span class="logo__text"> Let'sFood </span>
                     <svg width="43" height="35" viewBox="0 0 43 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -64,23 +65,26 @@
                             stroke-linejoin="round"
                         />
                     </svg>
-                </div>
+                </a>
                 <div class="navbar__right">
                     <ul class="navbar__list">
                         <li class="navbar__item">
                             <a href="#" class="navbar__item__link">Trang chủ</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item__link">Thực đơn</a>
+                            <a href="#menu" class="navbar__item__link">Thực đơn</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item__link">Hoạt động</a>
+                            <a href="#serve" class="navbar__item__link">Hoạt động</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item__link">Về chúng tôi</a>
+                            <a href="#about" class="navbar__item__link">Về chúng tôi</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item__link">Liên hệ</a>
+                            <a href="#footer" class="navbar__item__link">Liên hệ</a>
+                        </li>
+                        <li class="login__mb">
+                            <a href="./pages/signIn.html" class="btn">Đăng nhập</a>
                         </li>
                     </ul>
                     <div class="navbar__cart__login">
@@ -148,7 +152,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="navbar__login btn">
+                        <a href="./pages/signIn.html" class="navbar__login btn">
                             <i class="fas fa-sign-in-alt"></i>
                             <span> Đăng nhập </span>
                         </a>
@@ -186,7 +190,7 @@
         <!-- HOME -->
 
         <!-- SERVICES -->
-        <section class="content">
+        <section class="content" id="serve">
             <div class="serve">
                 <div class="serve__content">
                     <p class="serve__header">Phương thức hoạt động</p>
@@ -217,7 +221,7 @@
             <!-- SERVICES -->
 
             <!-- MENU -->
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="menu__content">
                     <p class="menu__header">Thực đơn của chúng tôi</p>
                     <h2 class="menu__title">Thực đơn phổ biến của chúng tôi</h2>
@@ -270,14 +274,14 @@
                     </div>
                 </div>
                 <div class="menu__button">
-                    <button class="btn">More Menu</button>
+                    <button class="btn">Xem thêm</button>
                 </div>
             </div>
         </section>
         <!-- MENU -->
 
         <!-- ABOUT -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__image">
                 <img src="./assets/image/about_1.png" alt="" />
                 <div>
@@ -343,20 +347,20 @@
         <!-- ABOUT -->
 
         <!-- JOIN -->
-        <section class="join">
+        <section class="join" id="join">
             <img src="./assets/image/join.png" alt="" />
             <div class="join__content">
                 <h1 class="join__content-container">Trở thành thành viên của chúng tôi để nhận được ưu đãi đến 50%</h1>
-                <button class="btn">Tham Gia</button>
+                <a href="./pages/signUp.html" class="btn">Tham gia</a>
             </div>
         </section>
         <!-- JOIN -->
 
         <!-- FOOTER -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer__container">
                 <div class="footer__about">
-                    <div class="logo">
+                    <a href="#" class="logo">
                         <span class="logo__text"> Let'sFood </span>
                         <svg width="43" height="35" viewBox="0 0 43 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -397,7 +401,7 @@
                                 stroke-linejoin="round"
                             />
                         </svg>
-                    </div>
+                    </a>
                     <p class="footer__about__address">Xã Quyết Thắng, TP. Thái Nguyên, Thái Nguyên</p>
 
                     <div class="social">
