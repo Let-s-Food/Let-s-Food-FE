@@ -290,6 +290,73 @@ a {
     visibility: visible;
 }
 
+.account {
+    position: relative;
+}
+
+.account__avt {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.account__container {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    min-width: 250px;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.account__item {
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.account__item:hover {
+    background-color: #f5f5f5;
+}
+
+.account__item > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account__item > a > span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.account__item > a > i {
+    font-size: 18px;
+    color: var(--black-color);
+}
+
+.account__item > a > i:hover {
+    color: var(--orange-color);
+}
+
+.account__item > a > span:hover {
+    color: var(--orange-color);
+}
+
+.account:hover .account__container {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 /* SERVICES & MENU */
 .serve {
     margin-top: 80px;
