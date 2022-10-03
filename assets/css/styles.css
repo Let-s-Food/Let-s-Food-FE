@@ -210,6 +210,10 @@ a {
     position: relative;
 }
 
+.navbar__cart-icon {
+    color: var(--black-color);
+}
+
 .navbar__cart__number {
     position: absolute;
     font-size: 12px;
