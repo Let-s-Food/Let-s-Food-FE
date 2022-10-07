@@ -16,7 +16,7 @@
         <!-- css -->
 
         <link rel="stylesheet" href="./css-cart/style.css" />
-        <link rel="stylesheet" href="./css-cart/responsive.css">
+        <link rel="stylesheet" href="./css-cart/responsive.css" />
 
         <title>Giỏ hàng</title>
     </head>
@@ -57,7 +57,13 @@
                                         <button class="cart__item__quantity__btn btn__minus">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <input class="cart__item__quantity__input input__number" type="number" value="1" min="1" step="1"/>
+                                        <input
+                                            class="cart__item__quantity__input input__number"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            step="1"
+                                        />
                                         <button class="cart__item__quantity__btn btn__plus">
                                             <i class="fas fa-plus"></i>
                                         </button>
@@ -91,7 +97,13 @@
                                         <button class="cart__item__quantity__btn btn__minus">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <input class="cart__item__quantity__input input__number" type="number" value="1" min="1" step="1"/>
+                                        <input
+                                            class="cart__item__quantity__input input__number"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            step="1"
+                                        />
                                         <button class="cart__item__quantity__btn btn__plus">
                                             <i class="fas fa-plus"></i>
                                         </button>
@@ -125,7 +137,13 @@
                                         <button class="cart__item__quantity__btn btn__minus">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <input class="cart__item__quantity__input input__number" type="number" value="1" min="1" step="1"/>
+                                        <input
+                                            class="cart__item__quantity__input input__number"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            step="1"
+                                        />
                                         <button class="cart__item__quantity__btn btn__plus">
                                             <i class="fas fa-plus"></i>
                                         </button>
@@ -159,7 +177,13 @@
                                         <button class="cart__item__quantity__btn btn__minus">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <input class="cart__item__quantity__input input__number" type="number" value="1" min="1" step="1"/>
+                                        <input
+                                            class="cart__item__quantity__input input__number"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            step="1"
+                                        />
                                         <button class="cart__item__quantity__btn btn__plus">
                                             <i class="fas fa-plus"></i>
                                         </button>
@@ -193,7 +217,13 @@
                                         <button class="cart__item__quantity__btn btn__minus">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <input class="cart__item__quantity__input input__number" type="number" value="1" min="1" step="1"/>
+                                        <input
+                                            class="cart__item__quantity__input input__number"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            step="1"
+                                        />
                                         <button class="cart__item__quantity__btn btn__plus">
                                             <i class="fas fa-plus"></i>
                                         </button>
@@ -227,7 +257,13 @@
                                         <button class="cart__item__quantity__btn btn__minus">
                                             <i class="fas fa-minus"></i>
                                         </button>
-                                        <input class="cart__item__quantity__input input__number" type="number" value="1" min="1" step="1"/>
+                                        <input
+                                            class="cart__item__quantity__input input__number"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            step="1"
+                                        />
                                         <button class="cart__item__quantity__btn btn__plus">
                                             <i class="fas fa-plus"></i>
                                         </button>
@@ -258,7 +294,7 @@
                             <div class="cart__total__block__mb">
                                 <div class="cart__total__block">
                                     <span class="cart__total__title"> Tạm tính </span>
-                                    <span class="cart__total__price total__price__origin">60000</span>
+                                    <span class="cart__total__price total__price__origin">0</span>
                                 </div>
                                 <div class="cart__total__block">
                                     <span class="cart__total__title"> Phí vận chuyển </span>
@@ -266,7 +302,7 @@
                                 </div>
                                 <div class="cart__total__block">
                                     <span class="cart__total__title"> Tổng cộng </span>
-                                    <span class="cart__total__price total__price"> 70000 </span>
+                                    <span class="cart__total__price total__price">10000</span>
                                 </div>
                             </div>
                             <button class="cart__total__btn">Đặt hàng</button>
@@ -275,6 +311,19 @@
                 </div>
             </div>
             <div class="orange">
+                <div class="pay">
+                    <h3 class="pay__title">Lựa chọn phương thức thanh toán</h3>
+                    <div class="pay__select">
+                        <div class="radio">
+                            <input id="radio-1" name="radio" type="radio" checked />
+                            <label for="radio-1" class="radio-label">Thanh toán bằng Momo</label>
+                        </div>
+                        <div class="radio">
+                            <input id="radio-2" name="radio" type="radio" />
+                            <label for="radio-2" class="radio-label">Thanh toán khi nhận hàng</label>
+                        </div>
+                    </div>
+                </div>
                 <img src="../cart.png" alt="" class="cart__img" />
             </div>
         </div>
