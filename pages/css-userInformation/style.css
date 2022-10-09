@@ -94,6 +94,10 @@ li {
     flex-direction: column;
 }
 
+.back__home-mb {
+    display: none;
+}
+
 .form {
     background-color: white;
     padding: 30px;
@@ -103,6 +107,16 @@ li {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black-color);
+    margin-right: auto;
+    border-bottom: 2px solid var(--orange-color);
+    margin-bottom: 30px;
 }
 
 .userInfo__form__item {
@@ -114,6 +128,8 @@ li {
 
 .label__form__userInfo {
     width: 30%;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .input__userInfo {
@@ -128,7 +144,6 @@ li {
 }
 
 .form__btn {
-
     margin-left: auto;
 }
 
