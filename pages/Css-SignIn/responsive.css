@@ -7,7 +7,7 @@
 @media (max-width: 767.98px) {
     .form__container {
         width: 90%;
-        height: 95%;
+        max-height: 95%;
         padding: 10px 20px;
         border-radius: 20px;
         /* padding: 0 15px; */
