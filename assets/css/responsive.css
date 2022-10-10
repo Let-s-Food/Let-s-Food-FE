@@ -73,6 +73,10 @@
         font-size: 18px;
         max-width: 80%;
     }
+
+    .account__container {
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
